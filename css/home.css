@@ -140,6 +140,7 @@ hr {
   width: 100%;
   position: absolute;
   bottom: 0%;
+  padding: 24px 0;
 }
 
 .brands-items {
@@ -154,9 +155,9 @@ hr {
 
 /*Start Category */
 .category {
-  height: 800px;
+  height: 100%;
   width: 100%;
-  padding: 42px !important;
+  padding: 42px 0 !important;
 }
 
 .category .category-cards {
@@ -167,9 +168,10 @@ hr {
   height: 100%;
   text-align: center;
 }
-.category .category-cards h3 {
+.category .category-cards h2 {
   font-family: var(--font-titles);
-  font-size: 32px;
+  font-size: 2rem;
+
   padding: 24px 0;
 }
 
@@ -178,6 +180,7 @@ hr {
   gap: 20px;
   display: flex;
   justify-content: center;
+  padding: 24px;
 }
 .column {
   display: flex;
@@ -187,6 +190,6 @@ hr {
 
 .photo img {
   width: 100%;
-  height: auto;
+  height: 300px;
 }
 /*End Category */
