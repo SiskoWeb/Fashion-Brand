@@ -172,4 +172,21 @@ hr {
   font-size: 32px;
   padding: 24px 0;
 }
+
+.gallery {
+  display: flex;
+  gap: 20px;
+  display: flex;
+  justify-content: center;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.photo img {
+  width: 100%;
+  height: auto;
+}
 /*End Category */
