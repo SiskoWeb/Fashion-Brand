@@ -1,0 +1,27 @@
+[
+    {
+        "name": "John Doe",
+        "text": "Great product! It exceeded my expectations. I would highly recommend it.",
+        "stars": 5
+    },
+    {
+        "name": "Jane Smith",
+        "text": "Not bad, but there are some improvements needed. I'll give it 3 stars.",
+        "stars": 3
+    },
+    {
+        "name": "Mike Johnson",
+        "text": "This is the worst product I've ever purchased. 1 star is too much!",
+        "stars": 1
+    },
+    {
+        "name": "Sarah Wilson",
+        "text": "Decent quality for the price. I'm giving it 4 stars.",
+        "stars": 4
+    },
+    {
+        "name": "David Brown",
+        "text": "A solid product with a fair price. I'll rate it 4 stars.",
+        "stars": 4
+    }
+]

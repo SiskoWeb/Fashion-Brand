@@ -6,7 +6,7 @@
   --hero-BgColor: #f2f0f1;
   --card-BgColor: #f0f0f0;
   --price-After-Color: #ff3333;
-
+--star-Color:#FFC633;
   --font-titles:font-family: 'Geologica', sans-serif;
 
 --redius-mid:5px;
@@ -22,19 +22,28 @@
   box-sizing: border-box;
 }
 
-body{
-    width: 100%;
-   
-    
-}
 
 .container {
-    width: 100%;
-    max-width: 1280px; 
-    margin: 0 auto; 
-    padding: 0 20px; 
+  margin: 0 auto;
+  width: 80%;
+  max-width: 1400px;
+ 
+  overflow-x: hidden;
+ 
+
   }
 
+
+  /* @media (max-width:1000px) {
+    .container {
+
+      max-width: 650px; 
+     
+  overflow-x: hidden;
+
+    }
+    
+  } */
   /* font-family: 'B612', sans-serif;
 font-family: 'B612 Mono', monospace;
 font-family: 'DM Sans', sans-serif;

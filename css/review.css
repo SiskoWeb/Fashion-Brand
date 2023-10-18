@@ -1,8 +1,24 @@
 @import "global.css";
 
+.reviews-container {
+  display: flex;
+  gap: 16px;
+}
 .item-review {
-  width: 300px;
-  height: 250px;
+  width: 330px;
+  min-height: 150px;
+
+  height: auto;
   border-radius: var(--redius-hard);
-  border: 1px gray solid;
+  border: 1px rgb(231, 231, 231) solid;
+  gap: 8px;
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+}
+.item-review i {
+  color: var(--star-Color);
+}
+.item-review span i {
+  color: #01ab31;
 }
