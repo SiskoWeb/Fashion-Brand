@@ -1,11 +1,17 @@
 @import "global.css";
 
 .reviews-container {
+  width: 100%;
+  margin: 40px 0;
+}
+.reviews-list {
   display: flex;
   gap: 16px;
+  width: 100%;
+  overflow-x: scroll;
 }
 .item-review {
-  width: 330px;
+  min-width: 330px;
   min-height: 150px;
 
   height: auto;
@@ -14,7 +20,7 @@
   gap: 8px;
   display: flex;
   flex-direction: column;
-  padding: 8px;
+  padding: 16px;
 }
 .item-review i {
   color: var(--star-Color);

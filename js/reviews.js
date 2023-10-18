@@ -2,7 +2,7 @@
 
 // Function to create a single review element
 function createReviewElement(review) {
-    const section = document.querySelector(".reviews-container");
+    const section = document.querySelector(".reviews-list");
 
     // Create review container
     const reviewContainer = document.createElement("div");
