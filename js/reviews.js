@@ -52,3 +52,25 @@ fetch("dummydata/reviews.json")
     .catch((error) => {
         console.error("Error fetching data:", error);
     });
+
+
+
+
+/// scrolling logic
+const itemList = document.querySelector('.reviews-list');
+const leftButton = document.querySelector('.scroll-button.left');
+const rightButton = document.querySelector('.scroll-button.right');
+
+let scrollPosition = 0;
+
+leftButton.addEventListener('click', () => {
+    scrollPosition -= 100;
+    if (scrollPosition === -2500) return scrollPosition += 100;
+    itemList.style.transform = `translateX(${scrollPosition}px)`;
+});
+
+rightButton.addEventListener('click', () => {
+    scrollPosition += 100;
+    if (scrollPosition === 2500) return scrollPosition -= 100;
+    itemList.style.transform = `translateX(${scrollPosition}px)`;
+});

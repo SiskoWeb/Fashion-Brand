@@ -3,17 +3,19 @@
 .reviews-container {
   width: 100%;
   margin: 40px 0;
+  position: relative;
+  overflow: hidden;
 }
 .reviews-list {
   display: flex;
   gap: 16px;
+  transition: transform 0.3s ease;
   width: 100%;
-  overflow-x: scroll;
 }
 .item-review {
   min-width: 330px;
   min-height: 150px;
-
+  transition: transform 0.3s ease;
   height: auto;
   border-radius: var(--redius-hard);
   border: 1px rgb(231, 231, 231) solid;
@@ -22,9 +24,16 @@
   flex-direction: column;
   padding: 16px;
 }
+
 .item-review i {
   color: var(--star-Color);
 }
 .item-review span i {
   color: #01ab31;
+}
+
+.header-revwies {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 0;
 }
