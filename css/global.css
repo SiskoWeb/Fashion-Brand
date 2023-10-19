@@ -32,7 +32,7 @@ html {
   width: 80%;
   max-width: 1400px;
  
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
  
 
   }
@@ -43,7 +43,7 @@ html {
 
       width: 90%;
      
-  overflow-x: hidden;
+
 
     }
   }

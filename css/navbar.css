@@ -53,6 +53,7 @@ header .links-navbar a:hover {
   height: 20px;
   z-index: 5;
   position: absolute;
+  left: 10px;
 }
 #toggle {
   display: none;
@@ -107,6 +108,7 @@ header .links-navbar a:hover {
     transform-origin: top center;
     opacity: 0;
     top: 100%;
+
     position: absolute;
     display: flex;
     width: 100%;
