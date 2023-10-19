@@ -148,6 +148,51 @@ hr {
   margin: 0 16px;
 }
 
+.slide-track {
+  width: calc(150px * 20);
+  display: flex;
+  animation: scroll 30s linear infinite;
+  justify-content: space-between;
+}
+
+.slide {
+  width: 150px;
+  height: 60px;
+
+  display: grid;
+  place-items: center;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.slide:hover {
+  transform: scale(0.8);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(calc(-220px * 10));
+  }
+}
+@media screen and (max-width: 768px) {
+  .slide-track {
+    width: calc(80px * 20);
+  }
+  .slide {
+    width: 80px;
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0px);
+    }
+    100% {
+      transform: translateX(calc(-80px * 10));
+    }
+  }
+}
 .hero .brands {
   background-color: var(--main-Color);
   height: auto;
@@ -205,6 +250,16 @@ hr {
 .photo img {
   width: 100%;
   height: 300px;
+}
+.btn-all-gallery {
+  padding: 8px 32px;
+  border: 1px rgb(206, 206, 206) solid;
+  border-radius: var(--redius-hard);
+  color: black;
+  font-family: "B612 Mono", monospace;
+  font-weight: 400;
+  font-style: italic;
+  font-size: clamp(8px, 100%, 10px);
 }
 /*End Category */
 
