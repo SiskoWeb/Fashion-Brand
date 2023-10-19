@@ -6,7 +6,7 @@
   justify-content: space-between;
   flex-direction: row;
   gap: 8px;
-  align-items: start;
+  align-items: end;
   padding-top: 32px;
 }
 
@@ -16,6 +16,14 @@
   gap: 16px;
 
   width: 100%;
+}
+.img-register {
+  width: 100%;
+  height: 100%;
+}
+.img-register img {
+  width: 100%;
+  height: 100%;
 }
 .register-container form {
   display: flex;
@@ -42,4 +50,14 @@ input:focus {
   color: white;
   padding: 16px;
   border-radius: var(--redius-hard);
+}
+
+@media screen and (max-width: 768px) {
+  .register-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    padding-top: 32px;
+  }
 }

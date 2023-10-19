@@ -9,7 +9,6 @@
 .faq-card {
   border-radius: var(--redius-hard);
   background-color: var(--card-BgColor);
-
   width: 100%;
   height: 100%;
   text-align: center;
@@ -32,7 +31,7 @@
   display: block;
   text-align: left;
   width: 100%;
-  padding: 1em 0;
+  /* padding: 1em 0; */
   color: #7288a2;
   font-size: 2rem;
 
@@ -56,6 +55,7 @@
 
 .accordion button .accordion-title {
   padding: 1em 1.5em 1em 0;
+  font-size: clamp(18px, 4vw, 28px) !important;
 }
 
 .accordion button .icon {
@@ -110,7 +110,8 @@
   will-change: opacity, max-height;
 }
 .accordion .accordion-content p {
-  font-size: 1rem;
+  font-size: clamp(12px, 4vw, 20px) !important;
+
   font-weight: 300;
   margin: 2em 0;
 }
