@@ -5,6 +5,20 @@
   margin: 40px 0;
   position: relative;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.header-revwies h3 {
+  font-family: "B612", sans-serif;
+  font-size: 48px;
+  text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.36);
+}
+.header-revwies button {
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
 }
 .reviews-list {
   display: flex;
@@ -35,5 +49,10 @@
 .header-revwies {
   display: flex;
   justify-content: space-between;
-  padding: 16px 0;
+  padding: 32px 16px;
+}
+
+.header-revwies .btns-reviews {
+  display: flex;
+  gap: 16px;
 }
