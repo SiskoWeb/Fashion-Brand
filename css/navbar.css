@@ -1,0 +1,130 @@
+@import "global.css";
+
+/* Start header */
+
+header {
+  width: 100%;
+  height: 80px;
+}
+
+header nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 16px;
+  align-items: center;
+  gap: 32px;
+  border-bottom: 1px rgb(196, 196, 196) solid;
+}
+header .logo {
+  /* font-family: var(--font-titles) !important; */
+  font-family: "Geologica", sans-serif !important;
+  cursor: pointer;
+  font-size: 32px;
+  font-weight: 700;
+  color: black;
+}
+
+header .links-navbar {
+  font-family: 700;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+header .links-navbar a {
+  color: black;
+
+  transition: 0.3s linear all;
+}
+header .links-navbar a:hover {
+  transform: scale(1.1);
+}
+.hamburger {
+  display: none;
+}
+#toggle {
+  display: none;
+}
+.hamburger {
+  position: absolute;
+  top: 4em;
+  left: 6%;
+  margin-left: 1em;
+  margin-top: -45px;
+  width: 2em;
+  height: 45px;
+  z-index: 5;
+}
+#toggle {
+  display: none;
+}
+.hamburger div {
+  position: relative;
+  width: 2em;
+  height: 4px;
+  border-radius: 3px;
+  background-color: var(--main-Color);
+  margin-top: 6px;
+  transition: all 0.3s ease-in-out;
+}
+#toggle:checked + .hamburger .top-bun {
+  transform: rotate(-45deg);
+  margin-top: 25px;
+}
+#toggle:checked + .hamburger .bottom-bun {
+  opacity: 0;
+  transform: rotate(45deg);
+}
+#toggle:checked + .hamburger .meat {
+  transform: rotate(45deg);
+  margin-top: -5px;
+}
+
+#toggle:checked + .hamburger + .nav {
+  top: 0;
+  transform: scale(1);
+}
+
+/* End header */
+
+@media screen and (max-width: 768px) {
+  nav {
+    position: relative;
+    z-index: 999;
+    transition: 0.3s all linear;
+  }
+  .hamburger {
+    display: block;
+    color: black;
+  }
+  .links-navbar {
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    transform: scaleY(0);
+    transform-origin: top center;
+    opacity: 0;
+    top: 100%;
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    min-height: 200px;
+    padding: 20px 0;
+    gap: 10px;
+
+    border-top: none;
+    background-color: white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 998;
+  }
+  .show {
+    transform: scaleY(1);
+    opacity: 0.9;
+  }
+}

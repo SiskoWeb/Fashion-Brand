@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+
     <link rel="stylesheet" href="css/gellery.css" />
 
 
@@ -24,11 +26,20 @@
     <header>
         <nav>
             <div><a href="index.html" class="logo">FashionHub</a></div>
-            <div class="links-navbar">
+            <div class="links-navbar" id="links">
                 <a href="gallery.html">Galery</a>
 
                 <a href="index.html#Reviews">Reviews</a>
             </div>
+
+            <!-- hamburger menu  -->
+            <input id="toggle" type="checkbox"></input>
+
+            <label for="toggle" class="hamburger">
+                <div class="top-bun"></div>
+                <div class="meat"></div>
+                <div class="bottom-bun"></div>
+            </label>
         </nav>
     </header>
     <!-- End Header -->
@@ -101,6 +112,7 @@
 
         <p>Fashionhub.ma© 2024, All Rights Reserved</p>
     </footer>
+    <script src="js/navbar.js"></script>
 </body>
 
 </html>

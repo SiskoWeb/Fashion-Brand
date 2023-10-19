@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="css/faq.css" />
   <link rel="stylesheet" href="css/review.css" />
   <link rel="stylesheet" href="css/gellery.css" />
+  <link rel="stylesheet" href="css/navbar.css" />
   <script src="https://kit.fontawesome.com/ea3542be0c.js" crossorigin="anonymous"></script>
   <title>FashionHub</title>
 </head>
@@ -26,11 +27,18 @@
   <header>
     <nav>
       <div><a href="index.html" class="logo">FashionHub</a></div>
-      <div class="links-navbar">
+      <div class="links-navbar" id="links">
         <a href="gallery.html">Galery</a>
 
         <a href="#Reviews">Reviews</a>
       </div>
+      <input id="toggle" type="checkbox"></input>
+
+      <label for="toggle" class="hamburger">
+        <div class="top-bun"></div>
+        <div class="meat"></div>
+        <div class="bottom-bun"></div>
+      </label>
     </nav>
   </header>
   <!-- End Header -->
@@ -74,24 +82,21 @@
     </div>
     <div class="brands">
       <div class="brands-items container slide-track">
-        <img class="slide" src="assets/prada-logo.svg" alt="brands" />
+        <div class="slide"> <img src="assets/prada-logo.svg" alt="brands" />
+        </div>
+        <div class="slide"> <img src="assets/zara-logo.svg" alt="brands" />
+        </div>
+        <div class="slide"> <img src="assets/gucci-logo.svg" alt="brands" />
+        </div>
+        <div class="slide"> <img src="assets/prada-logo.svg" alt="brands" />
+        </div>
+        <div class="slide"> <img src="assets/zara-logo.svg" alt="brands" />
+        </div>
+        <div class="slide"> <img src="assets/gucci-logo.svg" alt="brands" />
+        </div>
 
-        <img class="slide" src="assets/zara-logo.svg" alt="brands" />
-        <img class="slide" src="assets/prada-logo.svg" alt="brands" />
 
-        <img class="slide" src="assets/zara-logo.svg" alt="brands" />
-        <img class="slide" src="assets/prada-logo.svg" alt="brands" />
 
-        <img class="slide" src="assets/zara-logo.svg" alt="brands" />
-        <img class="slide" src="assets/prada-logo.svg" alt="brands" />
-
-        <img class="slide" src="assets/zara-logo.svg" alt="brands" />
-        <img class="slide" src="assets/prada-logo.svg" alt="brands" />
-
-        <img class="slide" src="assets/zara-logo.svg" alt="brands" />
-        <img class="slide" src="assets/prada-logo.svg" alt="brands" />
-
-        <img class="slide" src="assets/zara-logo.svg" alt="brands" />
       </div>
     </div>
   </div>
@@ -273,6 +278,7 @@
     <p>Fashionhub.ma© 2024, All Rights Reserved</p>
   </footer>
   <script src="js/reviews.js"></script>
+  <script src="js/navbar.js"></script>
 
 </body>
 
