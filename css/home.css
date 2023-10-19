@@ -5,14 +5,18 @@
   color: var(--bg-Color);
   text-align: center;
   padding: 8px;
+  cursor: pointer;
 
-  /* font-family: 'DM Sans', sans-serif; */
   font-weight: 200;
 }
 
 .notification-bar span {
   font-weight: 400;
+  color: white;
   text-decoration: underline;
+}
+.notification-bar a {
+  color: white;
 }
 
 /* Start header */
@@ -36,6 +40,7 @@ header .logo {
   cursor: pointer;
   font-size: 32px;
   font-weight: 700;
+  color: black;
 }
 
 header .links-navbar {

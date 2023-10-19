@@ -1,0 +1,45 @@
+.register-section {
+  background-color: var(--hero-BgColor);
+}
+.register-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 8px;
+  align-items: start;
+  padding-top: 32px;
+}
+
+.register-container .fileds {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  width: 100%;
+}
+.register-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+  margin: 24px 0;
+}
+.register-container form label {
+  display: flex;
+  flex-direction: column;
+}
+.register-container form input,
+input:focus {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px black solid;
+  width: 100%;
+}
+
+.register-container .submit-btn {
+  background-color: black;
+  color: white;
+  padding: 16px;
+  border-radius: var(--redius-hard);
+}
