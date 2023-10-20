@@ -39,11 +39,39 @@
   /* padding: 24px 0; */
 }
 
+.hero .animate-star1 {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  width: 50px;
+  animation: star-animation 2s infinite normal;
+}
+.hero .animate-star2 {
+  position: absolute;
+  top: 20%;
+  width: 50px;
+  left: 10%;
+  animation: star-animation 2s infinite normal;
+}
+
+@keyframes star-animation {
+  0% {
+    transform: translate(0);
+  }
+
+  50% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
 .hero .img-hero {
   flex-basis: 100%;
   /* min-height: 500px; */
   width: auto;
   height: 100%;
+  position: relative;
   /* background-color: red; */
 }
 .hero .img-hero img {
@@ -101,6 +129,7 @@
   width: 100%;
   font-size: clamp(8px, 80%, 16px);
 }
+
 hr {
   border: none;
   border-left: 1px solid hsla(200, 10%, 50%, 100);
