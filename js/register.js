@@ -6,7 +6,7 @@ let password = document.getElementById("password")
 let passwordConfirm = document.getElementById("passwordConfirm")
 let error = document.getElementById("error")
 let submit = document.getElementById("btn-form")
-
+let base_url = window.location.origin
 
 async function onSubmit() {
 
@@ -61,7 +61,8 @@ async function onSubmit() {
         // Afetr 2s Redirect to home page
         await setInterval(() => {
             setError("Redicreting")
-            window.location.replace("http://127.0.0.1:5500/index.html");
+
+            window.location.replace(`${base_url}/index.html#category`);
 
         }, 1000)
         setError("")
