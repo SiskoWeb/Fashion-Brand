@@ -8,7 +8,7 @@ let error = document.getElementById("error")
 let submit = document.getElementById("btn-form")
 
 
-function onSubmit() {
+async function onSubmit() {
 
     // validation value
     if (name.value.trim() === "") {
@@ -59,10 +59,12 @@ function onSubmit() {
         passwordConfirm.value = ""
 
         // Afetr 2s Redirect to home page
-        setInterval(() => {
+        await setInterval(() => {
+            setError("Redicreting")
+            window.location.replace("http://127.0.0.1:5500/index.html");
 
-        }, 2000)
-
+        }, 1000)
+        setError("")
     }
 
 }
