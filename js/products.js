@@ -5,6 +5,6 @@ function createReviewElement(products) {
     // create  product card
     const cardProduct = document.createElement("div")
     cardProduct.classList.add("product-card");
-
+// co
 
 }
