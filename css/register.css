@@ -14,8 +14,9 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
-
+  justify-content: center;
   width: 100%;
+  padding-bottom: 32px;
 }
 .img-register {
   width: 100%;
@@ -45,6 +46,11 @@ input:focus {
   width: 100%;
 }
 
+#error {
+  color: brown;
+  text-align: center;
+  min-height: 20px;
+}
 .register-container .submit-btn {
   background-color: black;
   color: white;
@@ -59,5 +65,8 @@ input:focus {
     flex-direction: column;
 
     padding-top: 32px;
+  }
+  .fileds h2 {
+    text-align: center;
   }
 }

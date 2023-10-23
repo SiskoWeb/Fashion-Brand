@@ -10,7 +10,7 @@
 
     <link rel="stylesheet" href="css/register.css" />
 
-<!-- Seo Optimizing -->
+    <!-- Seo Optimizing -->
     <meta name="description" content="Fashion Website Ecom">
     <meta name="keywords" content="fashion, clothes,ecom">
     <title>FashionHub - Regsiter</title>
@@ -58,12 +58,15 @@
             <div class="fileds">
                 <h2 class="title-page">Create an account</h2>
                 <form>
+                    <span id="error"></span>
                     <label for="name">Name <input id="name" type="text"></label>
                     <label for="email">Email <input id="email" type="email"></label>
                     <label for="password">Password <input id="password" type="password"></label>
+                    <label for="passwordConfirm">Confirm Password <input id="passwordConfirm" type="password"></label>
 
-                    <button class="submit-btn">Create Account</button>
+                    <button type="button" id="btn-form" onclick="onSubmit()" class="submit-btn">Create Account</button>
                 </form>
+
             </div>
 
             <div class="img-register">
@@ -83,6 +86,7 @@
     </footer>
 
     <script src="js/navbar.js"></script>
+    <script src="js/register.js"></script>
 </body>
 
 </html>

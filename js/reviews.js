@@ -30,22 +30,22 @@ function createReviewElement(review) {
     paragraph.textContent = `"${review.text}"`;
     reviewText.appendChild(paragraph);
 
-    // Append elements to the review container
+    // Append elements to the review containez
     reviewContainer.appendChild(starRating);
     reviewContainer.appendChild(nameContainer);
     reviewContainer.appendChild(reviewText);
 
-    // Append the review container to the section
+    // Append the reviewz container to the section
     section.appendChild(reviewContainer);
 }
 
 
 // fetch data and Loop through it
-
 fetch("dummydata/reviews.json")
     .then((response) => response.json())
     .then((data) => {
         for (const review of data) {
+            //passing item of reviews to fun <createReviewElement>
             createReviewElement(review);
         }
     })
@@ -67,6 +67,8 @@ leftButton.addEventListener('click', () => {
     scrollPosition -= 100;
     if (scrollPosition === -2500) return scrollPosition += 100;
     itemList.style.transform = `translateX(${scrollPosition}px)`;
+
+
 });
 
 rightButton.addEventListener('click', () => {
