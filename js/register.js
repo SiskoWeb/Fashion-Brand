@@ -62,7 +62,7 @@ async function onSubmit() {
         await setInterval(() => {
             setError("Redicreting")
 
-            window.location.replace(`${base_url}/index.html#category`);
+            window.location.replace(`${base_url}/Fashion-Brand/index.html#category`);
 
         }, 1000)
         setError("")
